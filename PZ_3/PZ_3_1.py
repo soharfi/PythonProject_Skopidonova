@@ -5,11 +5,11 @@ while True:
     try:
         x = int(input("Введите четырехзначное число: "))
         if x > 999 and x < 10000:
-            first = x // 1000
+            first = x // 1000 #по очереди вытаскиваем цифры из числа
             second = x // 100 % 10
             third = x // 10 % 10
             fourth = x % 10
-            if first == fourth and second == third:
+            if first == fourth and second == third: #проверяем, можно ли перевернуть число
                 print(True)
             else:
                 print(False)
